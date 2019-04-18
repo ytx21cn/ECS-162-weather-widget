@@ -1,0 +1,11 @@
+.l-time--current::before {
+	display: block;
+}
+
+.o-time--current::before {
+	content: "current";
+}
+
+.o-temp::after {
+	content: "\b0";
+}
