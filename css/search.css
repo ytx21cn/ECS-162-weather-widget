@@ -1,0 +1,36 @@
+/* Search */
+
+.l-search__section {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+}
+
+.l-search-box__par {
+	display: flex;
+	max-width: 100%;
+}
+
+.o-search-box__header {
+	font-size: 22pt;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+.l-search-box {
+	--h-padding: 1em;
+	padding: 0 var(--h-padding);
+	max-width: calc(75% - var(--h-padding) * 2);
+}
+
+.o-search-box {
+	font-size: 20pt;
+}
+
+.l-submit {
+	flex-grow: 1;
+}
+
+.o-submit {
+	font-size: 16pt;
+}

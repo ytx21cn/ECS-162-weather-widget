@@ -19,7 +19,7 @@
 				
 				<!-- Search city -->
 				<section class="l-search__section c-search">
-					<h3 class="o-search-box-header t-dark-background-text t-header-font">Forecast for</h3>
+					<h3 class="o-search-box__header t-dark-background-text t-header-font">Forecast for</h3>
 					<p class="l-search-box__par">
 						<input type="text" placeholder="Davis, CA" class="l-search-box o-search-box t-search-box-font t-search-box__background t-dark-background-text" />
 						<input type="submit" value="Submit" class="l-submit o-submit t-header-font t-search-button__background t-dark-background-text" />
@@ -29,10 +29,10 @@
 			</header>
 			
 			<!-- Current weather -->
-			<div class="t-dark-background-text">
+			<div class="l-weather-item c-weather-item l-weather-item--current t-dark-background-text">
 				<h4 class="l-time--current o-time o-time--current">12pm</h4>
-				<div class="o-weather-icon"></div>
-				<p class="o-temp">67</p>
+				<div class="l-weather-icon--current o-weather-icon o-weather-icon--current"></div>
+				<p class="l-temp--current o-temp">67</p>
 			</div>
 			
 			<!-- Expand icon -->
@@ -50,35 +50,35 @@
 			<article>
 				
 				<!-- 1st hour -->
-				<div>
+				<div class="l-weather-item">
 					<h4 class="o-time">1:00 pm</h4>
 					<div class="o-weather-icon"></div>
 					<p class="o-temp">67</p>
 				</div>
 				
 				<!-- 2nd hour -->
-				<div>
+				<div class="l-weather-item">
 					<h4 class="o-time">2:00 pm</h4>
 					<div class="o-weather-icon"></div>
 					<p class="o-temp">68</p>
 				</div>
 				
 				<!-- 3rd hour -->
-				<div>
+				<div class="l-weather-item">
 					<h4 class="o-time">3:00 pm</h4>
 					<div class="o-weather-icon"></div>
 					<p class="o-temp">70</p>
 				</div>
 				
 				<!-- 4th hour -->
-				<div>
+				<div class="l-weather-item">
 					<h4 class="o-time">4:00 pm</h4>
 					<div class="o-weather-icon"></div>
 					<p class="o-temp">70</p>
 				</div>
 				
 				<!-- 5th hour -->
-				<div>
+				<div class="l-weather-item">
 					<h4 class="o-time">5:00 pm</h4>
 					<div class="o-weather-icon"></div>
 					<p class="o-temp">71</p>
@@ -87,6 +87,7 @@
 			</article>
 			
 		</section>
+	
 	
 	</body>
 </html>

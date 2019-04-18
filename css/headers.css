@@ -1,0 +1,16 @@
+/* Headers */
+
+.l-page-header__area {
+	min-height: 100vh;
+	padding: 20pt;
+}
+
+.o-page-header {
+	font-size: 45pt;
+	text-align: center;
+}
+
+.o-page-subheader {
+	font-size: 33pt;
+	text-align: center;
+}
