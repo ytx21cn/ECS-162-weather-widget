@@ -1,9 +1,45 @@
+@import url("reset.css");
+@import url("typography.css");
+@import url("colors.css");
+
+/* Headers */
+
+.o-page-header {
+	font-size: 45pt;
+}
+
+.o-page-subheader {
+	font-size: 33pt;
+}
+
+.o-search-box-header {
+	font-size: 22pt;
+}
+
+.o-search-box {
+	font-size: 20pt;
+}
+
+.o-submit {
+	font-size: 16pt;
+}
+
+/* Weather information */
+
 .l-time--current::before {
 	display: block;
 }
 
+.o-time {
+	font-size: 35pt;
+}
+
 .o-time--current::before {
 	content: "current";
+}
+
+.o-temp {
+	font-size: 85pt;
 }
 
 .o-temp::after {
