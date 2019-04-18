@@ -2,25 +2,30 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Local Weather Six Hour Forecast</title>
 		<link rel="stylesheet" href="./css/index.css" />
 	</head>
 	
 	<body class="t-primary-font">
 	
-		<section>
+		<section class="l-page-header__area t-page-header__area">
 			<!-- Header -->
-			<header class="t-page-header__area t-header-font">
+			<header class="t-header-font">
+				
+				<!-- Page name -->
 				<h1 class="o-page-header t-dark-background-text">Local Weather Six Hour Forecast</h1>
 				<h2 class="o-page-subheader t-accent-text">Northern California with doppler radar</h2>
 				
-				<section>
-					<h3 class="o-search-box-header t-dark-background-text">Forecast for</h3>
-					<p>
-						<input type="text" placeholder="Davis, CA" class="o-search-box t-search-box-font" />
-						<input type="submit" value="Submit" class="o-submit t-header-font" />
+				<!-- Search city -->
+				<section class="l-search__section c-search">
+					<h3 class="o-search-box-header t-dark-background-text t-header-font">Forecast for</h3>
+					<p class="l-search-box__par">
+						<input type="text" placeholder="Davis, CA" class="l-search-box o-search-box t-search-box-font t-search-box__background t-dark-background-text" />
+						<input type="submit" value="Submit" class="l-submit o-submit t-header-font t-search-button__background t-dark-background-text" />
 					</p>
 				</section>
+				
 			</header>
 			
 			<!-- Current weather -->
@@ -78,7 +83,7 @@
 					<div class="o-weather-icon"></div>
 					<p class="o-temp">71</p>
 				</div>
-				
+			
 			</article>
 			
 		</section>
