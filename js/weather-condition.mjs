@@ -32,13 +32,13 @@ const iconGetter = new (function () {
 		
 		// 50d/n
 		["50d", "mist.svg"],
-		["50n", "mist.svg"],
+		["50n", "mist.svg"]
 	];
 	
 	const icons = new Map(iconCodesArray);
 	
 	Object.defineProperty(this, "get", {
-		value: 
+		value:
 			function (code) {
 				return pathToAssets + icons.get(code);
 			},
