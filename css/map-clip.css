@@ -1,7 +1,7 @@
 /* The map clip */
 
 .c-map-clip__container {
-	--size: 300px;
+	--size: 350px;
 	width: var(--size);
 	height: var(--size);
 }
@@ -28,9 +28,17 @@
 
 .o-map-clip__layer {
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .o-map-clip__map {
 	background-image: url(http://radar.weather.gov/ridge/Overlays/Topo/Short/DAX_Topo_Short.jpg);
-	background-size: cover;
+}
+
+.o-map-clip__cities {
+	background-image: url(http://radar.weather.gov/ridge/Overlays/Cities/Short/DAX_City_Short.gif);
+}
+
+.o-map-clip__doppler {
+	background-image: url(https://radar.weather.gov/ridge/RadarImg/N0R/DAX_N0R_0.gif);
 }
