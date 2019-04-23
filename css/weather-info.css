@@ -34,6 +34,11 @@
 	margin: auto;
 }
 
+.c-weather-item--future:not(:last-child) {
+	border-bottom: 2px solid gray;
+}
+
+
 .l-weather-item__element--future {
 	flex-grow: 1;
 }
