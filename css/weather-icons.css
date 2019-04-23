@@ -1,0 +1,108 @@
+:root {
+	/* 01d/n - 04d/n */
+	--01d: url(../assets/clearsky.svg);
+	--01n: url(../assets/clear-night.svg);
+	--02d: url(../assets/fewclouds-day.svg);
+	--02n: url(../assets/fewclouds-night.svg);
+	--03d: url(../assets/scatteredclouds.svg);
+	--03n: url(../assets/scatteredclouds.svg);
+	--04d: url(../assets/brokencloud.svg);
+	--04n: url(../assets/brokencloud.svg);
+		
+	/* 09d/n - 11d/n */
+	--09d: url(../assets/showerrain.svg);
+	--09n: url(../assets/showerrain.svg);
+	--10d: url(../assets/rain-day.svg);
+	--10n: url(../assets/rain-night.svg);
+	--11d: url(../assets/thunderstorms.svg);
+	--11n: url(../assets/thunderstorms.svg);
+	
+	/* 13d/n */
+	--13d: url(../assets/snow.svg);
+	--13n: url(../assets/snow.svg);
+	
+	/* 50d/n */
+	--50d: url(../assets/mist.svg);
+	--50n: url(../assets/mist.svg);
+}
+
+/* 01d/n - 04d/n */
+
+[data-weather-icon="01d"] {
+	background-image: var(--01d);
+}
+
+[data-weather-icon="01n"] {
+	background-image: var(--01n);
+}
+
+[data-weather-icon="02d"] {
+	background-image: var(--02d);
+}
+
+[data-weather-icon="02n"] {
+	background-image: var(--02n);
+}
+
+[data-weather-icon="03d"] {
+	background-image: var(--03d);
+}
+
+[data-weather-icon="03n"] {
+	background-image: var(--03n);
+}
+
+[data-weather-icon="04d"] {
+	background-image: var(--04d);
+}
+
+[data-weather-icon="04n"] {
+	background-image: var(--04n);
+}
+
+/* 09d/n - 11d/n */
+
+[data-weather-icon="09d"] {
+	background-image: var(--09d);
+}
+
+[data-weather-icon="09n"] {
+	background-image: var(--09n);
+}
+
+[data-weather-icon="10d"] {
+	background-image: var(--10d);
+}
+
+[data-weather-icon="10n"] {
+	background-image: var(--10n);
+}
+
+[data-weather-icon="11d"] {
+	background-image: var(--11d);
+}
+
+[data-weather-icon="11n"] {
+	background-image: var(--11n);
+}
+
+/* 13d/n */
+
+[data-weather-icon="13d"] {
+	background-image: var(--13d);
+}
+
+[data-weather-icon="13n"] {
+	background-image: var(--13n);
+}
+
+/* 50d/n */
+
+[data-weather-icon="50d"] {
+	background-image: var(--50d);
+}
+
+[data-weather-icon="50n"] {
+	background-image: var(--50n);
+}
+

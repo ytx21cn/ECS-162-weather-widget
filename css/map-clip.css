@@ -7,8 +7,7 @@
 }
 
 .c-map-clip__container {
-	--size: 400px;
-	width: var(--size);
+	width: 400px;
 	max-width: 100%;
 }
 

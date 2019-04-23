@@ -13,6 +13,7 @@
 
 .t-page-header__background {
 	background-image: linear-gradient(to bottom, var(--color-blue), var(--color-purple));
+	box-shadow: 0 10vh 10vh gray;
 }
 
 .t-search-box__background {
