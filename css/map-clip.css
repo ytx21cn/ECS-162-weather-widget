@@ -1,0 +1,36 @@
+/* The map clip */
+
+.c-map-clip__container {
+	--size: 300px;
+	width: var(--size);
+	height: var(--size);
+}
+
+.l-map-clip {
+	position: relative;
+}
+
+.c-map-clip {
+	width: 100%;
+	height: 100%;
+	clip-path: circle(50%);
+}
+
+/* Layers */
+
+.l-map-clip__layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.o-map-clip__layer {
+	background-repeat: no-repeat;
+}
+
+.o-map-clip__map {
+	background-image: url(http://radar.weather.gov/ridge/Overlays/Topo/Short/DAX_Topo_Short.jpg);
+	background-size: cover;
+}

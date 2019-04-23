@@ -5,12 +5,17 @@
 	padding: 20pt;
 }
 
-.o-page-header {
+.l-page-header__flexbox {
+	display: flex;
+	flex-direction: column;
+}
+
+.o-page-name__header {
 	font-size: 45pt;
 	text-align: center;
 }
 
-.o-page-subheader {
+.o-page-name__subheader {
 	font-size: 33pt;
 	text-align: center;
 }

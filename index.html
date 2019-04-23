@@ -10,48 +10,58 @@
 	<body class="t-primary-font">
 	
 		<section class="l-page-header__area t-page-header__area">
-			<!-- Header -->
-			<header class="t-header-font">
-				
-				<!-- Page name -->
-				<h1 class="o-page-header t-dark-background-text">Local Weather Six Hour Forecast</h1>
-				<h2 class="o-page-subheader t-accent-text">Northern California with doppler radar</h2>
-				
-				<!-- Search city -->
-				<section class="l-search__section c-search">
-					<h3 class="o-search-box__header t-dark-background-text t-header-font">Forecast for</h3>
-					<p class="l-search-box__par">
-						<input type="text" placeholder="Davis, CA" class="l-search-box o-search-box t-search-box-font t-search-box__background t-dark-background-text" />
-						<input type="submit" value="Submit" class="l-submit o-submit t-header-font t-search-button__background t-dark-background-text" />
-					</p>
-				</section>
-				
-			</header>
 			
-			<!-- Current weather -->
-			<div class="l-weather-item c-weather-item l-weather-item--current t-dark-background-text">
-				<h4 class="l-time--current o-time o-time--current">12pm</h4>
-				<div class="l-weather-icon--current o-weather-icon o-weather-icon--current"></div>
-				<p class="l-temp--current o-temp">67</p>
-			</div>
+			<!-- The flex box to contain page header (including search box), current weather information, and Doppler map -->
+			<section class="l-page-header__flexbox">
+				
+				<!-- Header, including the page name and the search box -->
+				<header class="t-header-font">
+					
+					<!-- Page name -->
+					<div class="c-page-name">
+						<h2 class="o-page-name__header t-dark-background-text">Local Weather Six Hour Forecast</h2>
+						<h3 class="o-page-name__subheader t-accent-text">Northern California with doppler radar</h3>
+					</div>
+					
+					<!-- Search city -->
+					<section class="l-search__section c-search">
+						<h3 class="o-search-box__header t-dark-background-text t-header-font">Forecast for</h3>
+						<p class="l-search-box__par">
+							<input type="text" placeholder="Davis, CA" class="l-search-box o-search-box t-search-box-font t-search-box__background t-dark-background-text" />
+							<input type="submit" value="Submit" class="l-submit o-submit t-header-font t-search-button__background t-dark-background-text" />
+						</p>
+					</section>
+					
+				</header>
+				
+				<!-- Current weather -->
+				<div class="l-weather-item c-weather-item l-weather-item--current t-dark-background-text">
+					<h4 class="l-time--current o-time o-time--current">12pm</h4>
+					<div class="l-weather-icon--current o-weather-icon o-weather-icon--current"></div>
+					<p class="l-temp--current o-temp">67</p>
+				</div>
+				
+				<!-- The map clip -->
+				<div class="c-map-clip__container">
+					<div class="l-map-clip c-map-clip">
+						<div class="l-map-clip__layer o-map-clip__layer o-map-clip__map"></div>
+						<div class="l-map-clip__layer o-map-clip__layer o-map-clip__cities">
+							<!--<img src="http://radar.weather.gov/ridge/Overlays/Cities/Short/DAX_City_Short.gif">-->
+						</div>
+						<div class="l-map-clip__layer o-map-clip__layer o-map-clip__doppler">
+							<!--<img src="https://radar.weather.gov/ridge/RadarImg/N0R/DAX_N0R_0.gif">-->
+						</div>
+					</div>
+				</div>
+			
+			</section>
 			
 			<!-- Expand icon -->
 			<h3>&nbsp;</h3>
 			
 		</section>
 
-		<section>
-			<div class="map">
-				<img src="http://radar.weather.gov/ridge/Overlays/Topo/Short/DAX_Topo_Short.jpg">
-			</div>
-			<div class="doppler">
-				<img src="http://radar.weather.gov/ridge/Overlays/Cities/Short/DAX_City_Short.gif">
-			</div>
-			<div class="cities">
-			<img src="https://radar.weather.gov/ridge/RadarImg/N0R/DAX_N0R_0.gif">
-			</div>
-
-		</section>
+		
 		
 		<!-- Weather for next 5 hours -->
 		<section>
