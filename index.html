@@ -9,23 +9,23 @@
 	
 	<body class="t-primary-font">
 	
-		<section class="l-page-header__area t-page-header__area">
+		<section class="l-page-header t-page-header__background">
 			
 			<!-- The flex box to contain page header (including search box), current weather information, and Doppler map -->
 			<section class="l-page-header__flexbox">
 				
 				<!-- Header, including the page name and the search box -->
-				<header class="t-header-font">
+				<header class="c-page-header t-header-font">
 					
 					<!-- Page name -->
 					<div class="c-page-name">
-						<h2 class="o-page-name__header t-dark-background-text">Local Weather Six Hour Forecast</h2>
-						<h3 class="o-page-name__subheader t-accent-text">Northern California with doppler radar</h3>
+						<h2 class="o-page-name__title t-dark-background-text">Local Weather Six Hour Forecast</h2>
+						<h3 class="o-page-name__subtitle t-accent-text">Northern California with doppler radar</h3>
 					</div>
 					
 					<!-- Search city -->
 					<section class="l-search__section c-search">
-						<h3 class="o-search-box__header t-dark-background-text t-header-font">Forecast for</h3>
+						<h3 class="o-search-box__title t-dark-background-text t-header-font">Forecast for</h3>
 						<p class="l-search-box__par">
 							<input type="text" placeholder="Davis, CA" class="l-search-box o-search-box t-search-box-font t-search-box__background t-dark-background-text" />
 							<input type="submit" value="Submit" class="l-submit o-submit t-header-font t-search-button__background t-dark-background-text" />
@@ -42,7 +42,7 @@
 				</div>
 				
 				<!-- The map clip -->
-				<div class="c-map-clip__container">
+				<div class="l-map-clip__container c-map-clip__container">
 					<div class="l-map-clip c-map-clip">
 						<div class="l-map-clip__layer o-map-clip__layer o-map-clip__map"></div>
 						<div class="l-map-clip__layer o-map-clip__layer o-map-clip__doppler"></div>
@@ -66,41 +66,41 @@
 			<h3>&nbsp;</h3>
 			
 			<!-- The flex box for 5-hour weather -->
-			<article>
+			<article class="l-weather__container--future">
 				
 				<!-- 1st hour -->
-				<div class="l-weather-item">
-					<h4 class="o-time">1:00 pm</h4>
-					<div class="o-weather-icon"></div>
-					<p class="o-temp">67</p>
+				<div class="l-weather-item l-weather-item--future c-weather-item">
+					<h4 class="l-weather-item__element--future l-time--future o-time">1:00 pm</h4>
+					<div class="l-weather-item__element--future l-weather-icon--future o-weather-icon"></div>
+					<p class="l-weather-item__element--future l-temp--future o-temp">67</p>
 				</div>
 				
 				<!-- 2nd hour -->
-				<div class="l-weather-item">
-					<h4 class="o-time">2:00 pm</h4>
-					<div class="o-weather-icon"></div>
-					<p class="o-temp">68</p>
+				<div class="l-weather-item l-weather-item--future c-weather-item">
+					<h4 class="l-weather-item__element--future l-time--future o-time">2:00 pm</h4>
+					<div class="l-weather-item__element--future l-weather-icon--future o-weather-icon"></div>
+					<p class="l-weather-item__element--future l-temp--future o-temp">68</p>
 				</div>
 				
 				<!-- 3rd hour -->
-				<div class="l-weather-item">
-					<h4 class="o-time">3:00 pm</h4>
-					<div class="o-weather-icon"></div>
-					<p class="o-temp">70</p>
+				<div class="l-weather-item l-weather-item--future c-weather-item">
+					<h4 class="l-weather-item__element--future l-time--future o-time">3:00 pm</h4>
+					<div class="l-weather-item__element--future l-weather-icon--future o-weather-icon"></div>
+					<p class="l-weather-item__element--future l-temp--future o-temp">70</p>
 				</div>
 				
 				<!-- 4th hour -->
-				<div class="l-weather-item">
-					<h4 class="o-time">4:00 pm</h4>
-					<div class="o-weather-icon"></div>
-					<p class="o-temp">70</p>
+				<div class="l-weather-item l-weather-item--future c-weather-item">
+					<h4 class="l-weather-item__element--future l-time--future o-time">4:00 pm</h4>
+					<div class="l-weather-item__element--future l-weather-icon--future o-weather-icon"></div>
+					<p class="l-weather-item__element--future l-temp--future o-temp">70</p>
 				</div>
 				
 				<!-- 5th hour -->
-				<div class="l-weather-item">
-					<h4 class="o-time">5:00 pm</h4>
-					<div class="o-weather-icon"></div>
-					<p class="o-temp">71</p>
+				<div class="l-weather-item l-weather-item--future c-weather-item">
+					<h4 class="l-weather-item__element--future l-time--future o-time">5:00 pm</h4>
+					<div class="l-weather-item__element--future l-weather-icon--future o-weather-icon"></div>
+					<p class="l-weather-item__element--future l-temp--future o-temp">71</p>
 				</div>
 			
 			</article>

@@ -11,10 +11,9 @@
 	max-width: 100%;
 }
 
-.o-search-box__header {
-	font-size: 22pt;
-	margin-top: 2em;
-	margin-bottom: 1em;
+.o-search-box__title {
+	font-size: x-large;
+	margin: 1em 0;
 }
 
 .l-search-box {

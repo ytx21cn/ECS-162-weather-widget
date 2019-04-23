@@ -1,0 +1,25 @@
+/* Headers */
+
+.l-page-header {
+	min-height: 100vh;
+}
+
+.c-page-header {
+	line-height: 1.5;
+}
+
+.l-page-header__flexbox {
+	display: flex;
+	flex-direction: column;
+	padding: 20pt;
+}
+
+.o-page-name__title {
+	font-size: xx-large;
+	text-align: center;
+}
+
+.o-page-name__subtitle {
+	font-size: x-large;
+	text-align: center;
+}

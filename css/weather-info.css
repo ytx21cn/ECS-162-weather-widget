@@ -1,0 +1,97 @@
+/* Weather information */
+
+
+/* Future weather container */
+
+.l-weather__container--future {
+	display: flex;
+	flex-direction: column;
+	align-items: center
+}
+
+/* Weather flex box item */
+
+.l-weather-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.l-weather-item--future {
+	width: 400px;
+	max-width: 100%;
+}
+
+.c-weather-item {
+	--weather-item-min-height: 150px;
+	height: var(--weather-item-min-height);
+	text-align: center;
+	line-height: 1;
+}
+
+.l-weather-item--current {
+	max-width: 400px;
+	margin: auto;
+}
+
+.l-weather-item__element--future {
+	flex-grow: 1;
+}
+
+
+/* Time */
+
+.o-time {
+	font-size: 35pt;
+	font-weight: 300;
+	text-align: right;
+}
+
+.l-time--current {
+	padding-right: 30pt;
+}
+
+.o-time--current {
+	border-right: 4px solid black;
+}
+.o-time--current::before {
+	content: "current\000A";
+	white-space: pre;
+}
+
+
+/* Weather condition icon */
+
+.l-weather-icon--current {
+	order: -1;
+	flex-basis: 100%;
+}
+
+.l-weather-icon--future {
+	flex-basis: 30%;
+}
+
+.o-weather-icon {
+	background-size: contain;
+}
+
+
+/* Temperature */
+
+.l-temp--current {
+	padding-left: 30pt;
+}
+
+.l-temp--future {
+	flex-basis: 25%;
+}
+
+.o-temp {
+	font-size: 85pt;
+	font-weight: 300;
+	text-align: left;
+}
+
+.o-temp::after {
+	content: "\b0";
+}

@@ -2,68 +2,10 @@
 @import url("typography.css");
 @import url("colors.css");
 
-@import url("headers.css");
+@import url("header.css");
 @import url("search.css");
 @import url("map-clip.css");
 
-/* Weather information */
+@import url("weather-info.css")
 
-.l-weather-item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.c-weather-item {
-	text-align: center;
-}
-
-.l-weather-item--current {
-	flex-wrap: wrap;
-	max-width: 400px;
-	margin: auto;
-}
-
-.o-time {
-	font-size: 35pt;
-	font-weight: 300;
-}
-
-.l-time--current {
-	padding-right: 30pt;
-}
-
-.o-time--current {
-	border-right: 4px solid black;
-}
-.o-time--current::before {
-	content: "current\000A";
-	white-space: pre;
-}
-
-.l-weather-icon--current {
-	order: -1;
-	flex-basis: 100%;
-}
-
-.o-weather-icon {
-	--weather-icon-width: 200px;
-	--weather-icon-height: 150px;
-	width: var(--weather-icon-width);
-	height: var(--weather-icon-height);
-	background-size: contain;
-}
-
-.l-temp--current {
-	padding-left: 30pt;
-}
-
-.o-temp {
-	font-size: 85pt;
-	font-weight: 300;
-}
-
-.o-temp::after {
-	content: "\b0";
-}
 

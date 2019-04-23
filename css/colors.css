@@ -11,7 +11,7 @@
 	color: var(--color-purple);
 }
 
-.t-page-header__area {
+.t-page-header__background {
 	background-image: linear-gradient(to bottom, var(--color-blue), var(--color-purple));
 }
 
