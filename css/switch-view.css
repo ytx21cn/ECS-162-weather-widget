@@ -19,3 +19,9 @@
 .o-switch-view__down {
 	background-image: url(../assets/down.svg);
 }
+
+@media only screen and (min-width: 600px) {
+	.o-switch-view {
+		display: none;
+	}
+}
