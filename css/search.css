@@ -19,7 +19,8 @@
 .l-search-box {
 	--h-padding: 1em;
 	padding: 0 var(--h-padding);
-	max-width: calc(75% - var(--h-padding) * 2);
+	min-width: 0;
+	flex-grow: 1;
 }
 
 .o-search-box {
@@ -32,4 +33,5 @@
 
 .o-submit {
 	font-size: 16pt;
+	padding: 0 0.5em;
 }
