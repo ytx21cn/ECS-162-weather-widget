@@ -1,11 +1,5 @@
 /* The map clip */
 
-@media screen and (max-width: 599px) {
-	.l-map-clip__container {
-		/*display: none;*/
-	}
-}
-
 .c-map-clip__container {
 	width: 400px;
 	max-width: 100%;
@@ -47,4 +41,11 @@
 
 .o-map-clip__doppler {
 	background-image: url(https://radar.weather.gov/ridge/RadarImg/N0R/DAX_N0R_0.gif);
+}
+
+
+@media only screen and (max-width: 599px) {
+	.l-map-clip__container { /* Mobile only: not to display the map clip */
+		display: none;
+	}
 }
