@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,500,500i|Saira+Extra+Condensed:300,400,500');
 
+* {
+	font-variant-numeric: tabular-nums;
+}
+
 .t-primary-font {
 	font-family: "Saira Extra Condensed", sans-serif;
 	font-weight: 300;
