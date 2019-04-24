@@ -2,10 +2,14 @@
 @import url("typography.css");
 @import url("colors.css");
 
+@import url("page-section.css");
+
 @import url("header.css");
 @import url("search.css");
 @import url("map-clip.css");
 
-@import url("weather-info.css")
+
+@import url("switch-view.css");
+@import url("weather-info.css");
 
 
