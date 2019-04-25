@@ -4,13 +4,23 @@
 
 :root {
 	--current-time-temp-gap: 5%;
+	--border: 2px solid lightgray
 }
 
 /* Current weather container */
 
+.l-weather__flex-item--current {
+	display: flex;
+	flex-basis: 50%;
+	justify-content: center;
+}
+
 .l-weather__container--current {
-	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
 	max-width: 400px;
+	width: 100%;
 	margin: auto;
 }
 
@@ -44,13 +54,12 @@
 }
 
 .l-weather-item--current {
-	width: 90%;
-	margin: 10pt auto;
+	flex-grow: 1;
 	flex-wrap: wrap;
 }
 
 .c-weather-item--future:not(:last-child) {
-	border-bottom: 2px solid gray;
+	border-bottom: var(--border);
 }
 
 
@@ -87,7 +96,7 @@
 
 .l-weather-icon--current {
 	order: -1;
-	flex-basis: 1;
+	flex-basis: 80%;
 	break-after: always;
 	margin: 10pt auto;
 	width: 80%;
@@ -128,4 +137,81 @@
 
 .o-temp::after {
 	content: "\b0";
+}
+
+/* Tablet view */
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+	.l-weather__container--current { 
+		flex-basis: 50%;
+		margin: 0;
+	}
+}
+
+/* Tablet and PC */
+
+@media only screen and (min-width: 600px) {
+
+	.l-weather__container--future {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		margin-top: 20pt;
+	}
+	
+	.l-weather-item--future {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		flex-grow: 1;
+	}
+	
+	.c-weather-item--future:not(:last-child) {
+		border-bottom: none;
+		border-right: var(--border);
+	}
+	
+	.o-time--future, .o-temp--future {
+		text-align: center;
+	}
+	
+	
+	
+	.l-weather-icon--future {
+		margin: 30pt;
+	}
+
+}
+
+/* PC view */
+
+@media only screen and (min-width: 1024px) {
+	.l-weather__flex-item--current {
+		align-items: stretch;
+	}
+	
+	.l-weather__container--current {
+		align-items: stretch;
+		max-width: 600px;
+	}
+	
+	.l-weather-item--current {
+		flex-wrap: nowrap;
+	}
+	
+	.l-time-current {
+		flex-basis: initial;
+	}
+	
+	.o-time--current {
+		border: none;
+	}
+	
+	.l-weather-icon--current {
+		order: initial;
+		flex-basis: 200px;
+		flex-grow: 0;
+		padding-top: 20%;
+	}
+	
 }

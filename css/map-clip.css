@@ -1,8 +1,18 @@
 /* The map clip */
 
-.c-map-clip__container {
-	width: 400px;
-	max-width: 100%;
+.l-map-clip__flex-item {
+	display: flex;
+	justify-content: center;
+	flex-basis: 50%;
+	flex-grow: 0;
+	flex-shrink: 2;
+}
+
+.l-map-clip__container {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 300px;
 }
 
 .l-map-clip {
@@ -43,9 +53,35 @@
 	background-image: url(https://radar.weather.gov/ridge/RadarImg/N0R/DAX_N0R_0.gif);
 }
 
+/* Mobile */
 
-@media only screen and (max-width: 599px) {
-	.l-map-clip__container { /* Mobile only: not to display the map clip */
+@media only screen and (max-width: 600px) {
+	.l-map-clip__container { 
 		display: none;
 	}
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+	.l-map-clip__flex-item { 
+		flex-basis: 50%;
+		flex-grow: 0;
+	}
+	
+	.l-map-clip__container {
+		align-items: center;
+	}
+}
+
+/* PC */
+
+@media only screen and (min-width: 1024px) {
+	.l-map-clip__flex-item {
+		width: 30%; 
+		flex-basis: 100%;
+		flex-grow: 1;
+		margin-left: 10%;
+	}
+	
 }
