@@ -9,13 +9,15 @@
 	
 	<body class="t-primary-font">
 	
-		<section class="l-page-section l-page-header t-page-header__background">
+		<!-- Note: on this page, the time, weather icons, and temperatures are for demo only. They will be overwritten when the page requests newest weather information from OpenWeatherMap. -->
+	
+		<section class="l-page-section l-page-section__header t-page-header__background">
 			
 			<!-- The flex box to contain page header (including search box), current weather information, and Doppler map -->
 			<section class="l-page-header__flexbox">
 				
 				<!-- Header, including the page name and the search box -->
-				<header class="c-page-header t-header-font">
+				<header class="l-page-header c-page-header t-header-font">
 					
 					<!-- Page name -->
 					<div class="c-page-name">
@@ -25,7 +27,7 @@
 					
 					<!-- Search city -->
 					<section class="l-search__section c-search">
-						<h3 class="o-search-box__title t-dark-background-text t-header-font">Forecast for</h3>
+						<h3 class="l-search-box__title o-search-box__title t-dark-background-text t-header-font">Forecast for</h3>
 						<p class="l-search-box__par">
 							<input type="text" placeholder="Davis, CA" class="l-search-box o-search-box t-search-box-font t-search-box__background t-dark-background-text" />
 							<input type="submit" value="Submit" class="l-submit o-submit t-header-font t-search-button__background t-dark-background-text" />
