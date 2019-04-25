@@ -144,7 +144,7 @@
 @media only screen and (max-width: 600px) {
 	.l-page-section__weather--future {
 		position: fixed;
-		top: 0;
+		top: 100vh;
 		bottom: 0;
 		overflow-y: auto;
 	}
