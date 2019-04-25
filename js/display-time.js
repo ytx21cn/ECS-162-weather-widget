@@ -2,7 +2,7 @@
 
 const timeGetter = new (function () {
 		
-		const getUTCDateString = function (openWeatherMapDate) {
+		function getUTCDateString(openWeatherMapDate) {
 			// Open Weather Map date format: "2019-04-25 17:00:00"
 			// Change it to UTC date string: "2019-04-25T17:00:00Z"			
 			const dateArray = openWeatherMapDate.split(" ");
@@ -10,7 +10,7 @@ const timeGetter = new (function () {
 			return UTCDateString;
 		}
 		
-		const getAmPmHours = function (hourIn24h) {
+		function getAmPmHours(hourIn24h) {
 			/* return an object in the form of:
 				{
 					"hour": 10,
