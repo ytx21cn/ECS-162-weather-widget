@@ -2,7 +2,7 @@
 
 
 function rad(d){
-	returnd * Math.PI / 180.0;
+	return d * Math.PI / 180.0;
   }
    
 function getDistance(lat1, lng1, lat2, lng2){
@@ -24,7 +24,7 @@ function getDistance(lat1, lng1, lat2, lng2){
 	);
 	s = s * 6378.137 ; 
 	s = Math.round(s * 10000) / 10000;
-	returns;
+	return s;
         }
 
 function checkDistence(lat, lng){
@@ -34,6 +34,6 @@ function checkDistence(lat, lng){
     if(distToSac >= 150)
         returnfalse;
    
-    returns;
+    return;
 }   
 	
