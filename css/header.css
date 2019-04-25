@@ -47,8 +47,8 @@
 /* PC view */
 @media only screen and (min-width: 1024px) {
 	.l-page-section__header {
-		min-height: 10vh;
-		max-height: 400px; /* This is never achieved since it is overwritten by min-height */
+		min-height: 400px;
+		max-height: 60vh;
 	}
 	
 	.l-page-header__flexbox {
