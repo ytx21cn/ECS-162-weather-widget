@@ -1,6 +1,6 @@
 // Convert time to am/pm format, given the UTC 24-hour format time on OpenWeatherMap
 
-export const timeGetter = new (function () {
+const timeGetter = new (function () {
 		
 		const getUTCDateString = function (openWeatherMapDate) {
 			// Open Weather Map date format: "2019-04-25 17:00:00"

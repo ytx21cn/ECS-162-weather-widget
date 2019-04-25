@@ -27,8 +27,8 @@
 					<section class="l-search__section c-search">
 						<h3 class="l-search-box__title o-search-box__title t-dark-background-text t-header-font">Forecast for</h3>
 						<p class="l-search-box__par">
-							<input type="text" placeholder="Davis, CA" class="l-search-box o-search-box t-search-box-font t-search-box__background t-dark-background-text" />
-							<input type="submit" value="Submit" class="l-submit o-submit t-header-font t-search-button__background t-dark-background-text" />
+							<input id="js-search-box" type="text" placeholder="Davis, CA" class="l-search-box o-search-box t-search-box-font t-search-box__background t-dark-background-text" />
+							<input id="js-submit" type="submit" value="Submit" class="l-submit o-submit t-header-font t-search-button__background t-dark-background-text" />
 						</p>
 					</section>
 					
@@ -39,7 +39,7 @@
 					<div class="l-weather__container--current">
 						<div class="l-weather-item c-weather-item l-weather-item--current t-dark-background-text">
 							<h4 class="l-time l-time--current o-time o-time--current">12pm</h4>
-							<div class="l-weather-icon--current o-weather-icon o-weather-icon--current" data-weather-icon="02d"></div>
+							<div class="l-weather-icon--current o-weather-icon o-weather-icon--current" data-js-weather-icon="02d"></div>
 							<p class="l-temp--current o-temp">67</p>
 						</div>
 					</div>
@@ -66,7 +66,7 @@
 		
 		
 		<!-- Weather for next 5 hours -->
-		<section class="l-page-section">
+		<section class="l-page-section l-page-section__weather--future t-future-weather__background">
 			
 			<!-- Collapse icon -->
 			<h3 class="l-switch-view o-switch-view o-switch-view__down">&nbsp;</h3>
@@ -77,35 +77,35 @@
 				<!-- 1st hour -->
 				<div class="l-weather-item l-weather-item--future c-weather-item c-weather-item--future">
 					<h4 class="l-weather-item__element--future l-time l-time--future o-time o-time--future">1:00 pm</h4>
-					<div class="l-weather-item__element--future l-weather-icon--future o-weather-icon" data-weather-icon="04d"></div>
+					<div class="l-weather-item__element--future l-weather-icon--future o-weather-icon" data-js-weather-icon="04d"></div>
 					<p class="l-weather-item__element--future l-temp--future o-temp o-temp--future">67</p>
 				</div>
 				
 				<!-- 2nd hour -->
 				<div class="l-weather-item l-weather-item--future c-weather-item c-weather-item--future">
 					<h4 class="l-weather-item__element--future l-time l-time--future o-time o-time--future">2:00 pm</h4>
-					<div class="l-weather-item__element--future l-weather-icon--future o-weather-icon" data-weather-icon="09d"></div>
+					<div class="l-weather-item__element--future l-weather-icon--future o-weather-icon" data-js-weather-icon="09d"></div>
 					<p class="l-weather-item__element--future l-temp--future o-temp o-temp--future">68</p>
 				</div>
 				
 				<!-- 3rd hour -->
 				<div class="l-weather-item l-weather-item--future c-weather-item c-weather-item--future">
 					<h4 class="l-weather-item__element--future l-time l-time--future o-time o-time--future">3:00 pm</h4>
-					<div class="l-weather-item__element--future l-weather-icon--future o-weather-icon" data-weather-icon="02d"></div>
+					<div class="l-weather-item__element--future l-weather-icon--future o-weather-icon" data-js-weather-icon="02d"></div>
 					<p class="l-weather-item__element--future l-temp--future o-temp o-temp--future">70</p>
 				</div>
 				
 				<!-- 4th hour -->
 				<div class="l-weather-item l-weather-item--future c-weather-item c-weather-item--future">
 					<h4 class="l-weather-item__element--future l-time l-time--future o-time o-time--future">4:00 pm</h4>
-					<div class="l-weather-item__element--future l-weather-icon--future o-weather-icon" data-weather-icon="01d"></div>
+					<div class="l-weather-item__element--future l-weather-icon--future o-weather-icon" data-js-weather-icon="01d"></div>
 					<p class="l-weather-item__element--future l-temp--future o-temp o-temp--future">70</p>
 				</div>
 				
 				<!-- 5th hour -->
 				<div class="l-weather-item l-weather-item--future c-weather-item c-weather-item--future">
 					<h4 class="l-weather-item__element--future l-time l-time--future o-time o-time--future">5:00 pm</h4>
-					<div class="l-weather-item__element--future l-weather-icon--future o-weather-icon" data-weather-icon="01d"></div>
+					<div class="l-weather-item__element--future l-weather-icon--future o-weather-icon" data-js-weather-icon="01d"></div>
 					<p class="l-weather-item__element--future l-temp--future o-temp o-temp--future">71</p>
 				</div>
 			
@@ -113,7 +113,8 @@
 			
 		</section>
 	
-	<script type="module" src="js/index.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/make-request.js"></script>
 	
 	</body>
 </html>
