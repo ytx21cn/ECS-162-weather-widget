@@ -61,10 +61,6 @@
 
 /* Time */
 
-.l-time {
-	break-after: avoid;
-}
-
 .o-time {
 	font-size: 25pt;
 	font-weight: 300;
