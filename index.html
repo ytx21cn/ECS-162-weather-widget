@@ -59,17 +59,17 @@
 			</section>
 			
 			<!-- Expand icon -->
-			<h3 class="l-switch-view o-switch-view o-switch-view__up">&nbsp;</h3>
+			<h3 id="js-expand" class="l-switch-view o-switch-view o-switch-view__up">&nbsp;</h3>
 			
 		</section>
 
 		
 		
 		<!-- Weather for next 5 hours -->
-		<section class="l-page-section l-page-section__weather--future t-future-weather__background">
+		<section id="js-future-weather" data-js-visibility="collapsed" class="l-page-section l-page-section__weather--future t-future-weather__background">
 			
 			<!-- Collapse icon -->
-			<h3 class="l-switch-view o-switch-view o-switch-view__down">&nbsp;</h3>
+			<h3 id="js-collapse" class="l-switch-view o-switch-view o-switch-view__down">&nbsp;</h3>
 			
 			<!-- The flex box for 5-hour weather -->
 			<article class="l-weather__container--future">
@@ -114,6 +114,7 @@
 		</section>
 	
 	<script src="js/index.js"></script>
+	<script src="js/display-time.js"></script>
 	<script src="js/make-request.js"></script>
 	
 	</body>
