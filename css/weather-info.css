@@ -147,7 +147,18 @@
 		top: 100vh;
 		bottom: 0;
 		overflow-y: auto;
+		transition: top 0.5s;
 	}
+	
+	[data-js-visibility="collapsed"] {
+		top: 100vh;
+	}
+	
+	[data-js-visibility="expanded"] {
+		top: 0;
+	}
+	
+	
 }
 
 
