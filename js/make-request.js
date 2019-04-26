@@ -61,8 +61,10 @@ const requestMaker = new (function () {
 	});
 	
 	function updateDOM(JSONobj) {
+		const coord = JSONobj.city.coord;
+		
 		if (JSONobj.cod % 100 >= 4) {
-			console.log("An error encountered when getting data.");
+			window.alert("An error encountered when getting data.");
 			return;
 		}
 		
