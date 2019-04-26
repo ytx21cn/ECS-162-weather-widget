@@ -33,7 +33,13 @@
 }
 
 /* Tablet view */
+
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
+	.l-page-section__header {
+		min-height: 60vh;
+		max-height: 1000px;
+	}
+	
 	.l-page-header__flexbox {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -45,6 +51,7 @@
 }
 
 /* PC view */
+
 @media only screen and (min-width: 1024px) {
 	.l-page-section__header {
 		min-height: 400px;
