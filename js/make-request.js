@@ -10,6 +10,10 @@ const requestMaker = new (function () {
 	// API key format: https://api.openweathermap.org/data/2.5/forecast/hourly?q=Davis,US&appid=27a7b6edb55dd1f09b742757826b9053&units=imperial
 	const APIFirstPart = "https://api.openweathermap.org/data/2.5/forecast/hourly?q=";
 	const APISecondPart = "&appid=27a7b6edb55dd1f09b742757826b9053&units=imperial"
+	sumbitButton.addEventListener("click", function () {
+		const city = searchBox.value;
+		requestMaker.search(city);
+	});
 	
 	function getRequestPromise(url) {
 		// Source consulted: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise 
@@ -175,5 +179,5 @@ const timeGetter = new (function () {
 	}
 )();
 
-
 requestMaker.search("Davis,US");
+
