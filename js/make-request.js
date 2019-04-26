@@ -51,8 +51,47 @@ const requestMaker = new (function () {
 			const weatherJSON = JSON.parse(responseText);
 			
 			console.log(weatherJSON);
+			
+			updateDOM(weatherJSON);
 		}
 	});
+	
+	function updateDOM(JSONobj) {
+		if (JSONobj.cod % 100 >= 4) {
+			console.log("An error encountered when getting data.");
+			return;
+		}
+		
+		// Current weather
+		const currentTime = document.getElementById("js-current-time");
+		const currentWeatherIcon = document.getElementById("js-current-weather-icon");
+		const currentTemp = document.getElementById("js-current-temp");
+		
+		// Future weather
+		const futureTimes = document.getElementsByClassName("js-future-time");
+		const futureWeatherIcons = document.getElementsByClassName("js-future-weather-icon");
+		const futureTemps = document.getElementsByClassName("js-future-temp");
+		
+		for (let i = 0; i < (1 + futureTimes.length); ++i) {
+			const time = JSONobj.list[i].dt_txt;
+			const weatherIcon = JSONobj.list[i].weather[0].icon;
+			const weatherIconAttr = "data-js-weather-icon";
+			const temp = Math.round(JSONobj.list[i].main.temp);
+			
+			if (i === 0) {
+				currentTime.textContent = timeGetter.displayTime(time, true);
+				currentWeatherIcon.setAttribute(weatherIconAttr, weatherIcon);
+				currentTemp.textContent = temp;
+			}
+			
+			else {
+				futureTimes[i-1].textContent = timeGetter.displayTime(time);
+				futureWeatherIcons[i-1].setAttribute(weatherIconAttr, weatherIcon);
+				futureTemps[i-1].textContent = temp;
+			}
+		}
+		
+	}
 	
 })();
 
@@ -110,7 +149,7 @@ const timeGetter = new (function () {
 		}
 		
 		Object.defineProperty(this, "displayTime", {
-			value: function (openWeatherMapDate) {
+			value: function (openWeatherMapDate, doNotShowMinutes = false) {
 				const UTCDateString = getUTCDateString(openWeatherMapDate);
 				const date = new Date(UTCDateString);
 				
@@ -118,13 +157,16 @@ const timeGetter = new (function () {
 				const hour = hourObj.hour;
 				const tt = hourObj.tt;
 				
-				const minute = date.getMinutes();
+				const minutes = date.getMinutes();
 				
-				if (minute < 10) {
-					return String.prototype.concat(hour, ":0", minute, " ", tt);
+				if (doNotShowMinutes) {
+					return String.prototype.concat(hour, tt);
+				}
+				else if (minutes < 10) {
+					return String.prototype.concat(hour, ":0", minutes, " ", tt);
 				}
 				else {
-					return String.prototype.concat(hour, ":", minute, " ", tt);
+					return String.prototype.concat(hour, ":", minutes, " ", tt);
 				}
 				
 			}
@@ -134,5 +176,4 @@ const timeGetter = new (function () {
 )();
 
 
-console.log(requestMaker);
 requestMaker.search("Davis,US");
